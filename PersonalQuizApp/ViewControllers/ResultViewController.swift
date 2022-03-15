@@ -8,22 +8,36 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet var yourTypeLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    var answers: [Answer]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        choseMaximumValue(from: answers)
     }
     
+    // MARK: - Private Methods
+    private func choseMaximumValue(from answers: [Answer]) {
+        
+        var dictionaryAnswer: [Animal: Int] = [:]
+                
+        for answer in answers {
+            if let animalCount = dictionaryAnswer[answer.animal] {
+                dictionaryAnswer.updateValue(animalCount + 1, forKey: answer.animal)
+            } else {
+                dictionaryAnswer[answer.animal] = 1
+            }
+        }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let sortedAnswers = dictionaryAnswer.sorted { $0.value > $1.value }
+        
+        guard let firstAnswer = sortedAnswers.first?.key else { return }
+        
+        yourTypeLabel.text = "Вы - \(firstAnswer.rawValue)!"
+        descriptionLabel.text = "\(firstAnswer.definition)"
     }
-    */
-
 }
