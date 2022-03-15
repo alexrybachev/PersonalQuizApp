@@ -240,9 +240,35 @@
                             <constraint firstItem="CyO-fq-bYg" firstAttribute="centerY" secondItem="wsu-Zg-89V" secondAttribute="centerY" id="qFR-OX-D3t"/>
                             <constraint firstItem="GBN-AT-R1X" firstAttribute="trailing" secondItem="BMR-py-jrw" secondAttribute="trailing" constant="20" id="sWu-WM-RiF"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="AQ4-td-QJu"/>
+                                <exclude reference="BMR-py-jrw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="sIg-04-prg"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="BMR-py-jrw" id="GUC-Jh-c1O"/>
+                        <outlet property="questionLabel" destination="TTG-iO-AEr" id="abx-un-BFq"/>
+                        <outlet property="questionProgressView" destination="KOR-pc-MWf" id="Da6-wU-9PJ"/>
+                        <outlet property="rangedSlider" destination="Znr-s4-Q4a" id="3wP-tw-VOn"/>
+                        <outlet property="rangedStackView" destination="CyO-fq-bYg" id="9Mw-B8-hb2"/>
+                        <outlet property="singleStackView" destination="AQ4-td-QJu" id="rNH-LR-0qt"/>
+                        <outletCollection property="singleButtons" destination="eyk-oH-9Ye" collectionClass="NSMutableArray" id="EP0-ce-WZa"/>
+                        <outletCollection property="singleButtons" destination="0n3-oh-QKQ" collectionClass="NSMutableArray" id="MVS-Sv-4kz"/>
+                        <outletCollection property="singleButtons" destination="cyk-WW-Rem" collectionClass="NSMutableArray" id="Fv9-fm-1xm"/>
+                        <outletCollection property="singleButtons" destination="CeP-Tg-7Em" collectionClass="NSMutableArray" id="xSF-ls-MHh"/>
+                        <outletCollection property="multipleLabels" destination="Qk5-eP-cML" collectionClass="NSMutableArray" id="wcK-Ud-TQf"/>
+                        <outletCollection property="multipleLabels" destination="cF4-aR-aj7" collectionClass="NSMutableArray" id="8El-4M-nsf"/>
+                        <outletCollection property="multipleLabels" destination="FWO-EY-pzg" collectionClass="NSMutableArray" id="wc8-xD-5wv"/>
+                        <outletCollection property="multipleLabels" destination="aU4-Qu-rtg" collectionClass="NSMutableArray" id="VD0-os-Q8X"/>
+                        <outletCollection property="multipleSwitches" destination="Ygi-fK-Ajw" collectionClass="NSMutableArray" id="dYv-HF-0UK"/>
+                        <outletCollection property="multipleSwitches" destination="uOZ-mC-WNV" collectionClass="NSMutableArray" id="VdD-pN-5A8"/>
+                        <outletCollection property="multipleSwitches" destination="f4o-kF-nc3" collectionClass="NSMutableArray" id="BQd-JP-nvw"/>
+                        <outletCollection property="multipleSwitches" destination="k9v-nm-Q3D" collectionClass="NSMutableArray" id="IoT-rO-MPG"/>
+                        <outletCollection property="rangedLabels" destination="dOm-nS-qvl" collectionClass="NSMutableArray" id="hNn-rN-GWu"/>
+                        <outletCollection property="rangedLabels" destination="9QA-IP-umQ" collectionClass="NSMutableArray" id="E27-Z6-u2g"/>
                         <segue destination="nsi-ud-6fB" kind="show" identifier="openResultVC" id="mu3-Rn-k2m"/>
                     </connections>
                 </viewController>
@@ -285,10 +311,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="drd-co-0hW">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="crp-lr-UHm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="crp-lr-UHm">
+                            <connections>
+                                <segue destination="xcc-7M-ieh" kind="unwind" unwindAction="unwindFor:" id="WW0-Xl-wgz"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8w3-PR-CYG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xcc-7M-ieh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2334" y="137"/>
         </scene>
