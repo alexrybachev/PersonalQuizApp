@@ -98,21 +98,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="f3B-yG-ThU" eventType="touchUpInside" id="QLg-dm-FTi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n3-oh-QKQ">
                                         <rect key="frame" x="0.0" y="58" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="f3B-yG-ThU" eventType="touchUpInside" id="nJM-vM-lOq"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyk-WW-Rem">
                                         <rect key="frame" x="0.0" y="116" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="f3B-yG-ThU" eventType="touchUpInside" id="PGe-B4-yWg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeP-Tg-7Em">
                                         <rect key="frame" x="0.0" y="174" width="46" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="f3B-yG-ThU" eventType="touchUpInside" id="uZy-fX-3xj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -131,17 +143,17 @@
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Znr-s4-Q4a">
                                         <rect key="frame" x="-2" y="0.0" width="284" height="31"/>
                                     </slider>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="162" translatesAutoresizingMaskIntoConstraints="NO" id="qXO-gD-kO7">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qXO-gD-kO7">
                                         <rect key="frame" x="0.0" y="51" width="280" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOm-nS-qvl">
-                                                <rect key="frame" x="0.0" y="0.0" width="59" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="140" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-IP-umQ">
-                                                <rect key="frame" x="221" y="0.0" width="59" height="20.5"/>
+                                                <rect key="frame" x="140" y="0.0" width="140" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -152,6 +164,9 @@
                                         <rect key="frame" x="0.0" y="92.5" width="280" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="f3B-yG-ThU" eventType="touchUpInside" id="5Za-w2-ziE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -218,6 +233,9 @@
                                         <rect key="frame" x="0.0" y="188" width="280" height="30"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="f3B-yG-ThU" eventType="touchUpInside" id="v9Z-59-IQo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -240,12 +258,6 @@
                             <constraint firstItem="CyO-fq-bYg" firstAttribute="centerY" secondItem="wsu-Zg-89V" secondAttribute="centerY" id="qFR-OX-D3t"/>
                             <constraint firstItem="GBN-AT-R1X" firstAttribute="trailing" secondItem="BMR-py-jrw" secondAttribute="trailing" constant="20" id="sWu-WM-RiF"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="AQ4-td-QJu"/>
-                                <exclude reference="BMR-py-jrw"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Вопрос №" id="sIg-04-prg"/>
                     <connections>
@@ -269,7 +281,7 @@
                         <outletCollection property="multipleSwitches" destination="k9v-nm-Q3D" collectionClass="NSMutableArray" id="IoT-rO-MPG"/>
                         <outletCollection property="rangedLabels" destination="dOm-nS-qvl" collectionClass="NSMutableArray" id="hNn-rN-GWu"/>
                         <outletCollection property="rangedLabels" destination="9QA-IP-umQ" collectionClass="NSMutableArray" id="E27-Z6-u2g"/>
-                        <segue destination="nsi-ud-6fB" kind="show" identifier="openResultVC" id="mu3-Rn-k2m"/>
+                        <segue destination="nsi-ud-6fB" kind="show" identifier="showResultVC" id="mu3-Rn-k2m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBD-DM-2k2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
