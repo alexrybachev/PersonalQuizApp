@@ -56,15 +56,47 @@
 		2826039327E07EC500F165CC /* PersonalQuizApp */ = {
 			isa = PBXGroup;
 			children = (
-				2826039427E07EC500F165CC /* AppDelegate.swift */,
-				2826039627E07EC500F165CC /* SceneDelegate.swift */,
-				2826039827E07EC500F165CC /* ViewController.swift */,
-				2826039A27E07EC500F165CC /* Main.storyboard */,
-				2826039D27E07EC600F165CC /* Assets.xcassets */,
-				2826039F27E07EC600F165CC /* LaunchScreen.storyboard */,
-				282603A227E07EC600F165CC /* Info.plist */,
+				282603AA27E07F6000F165CC /* App */,
+				282603AB27E07F6500F165CC /* ViewControllers */,
+				282603A827E07F4E00F165CC /* Storyboards */,
+				282603A927E07F5700F165CC /* Resources */,
 			);
 			path = PersonalQuizApp;
+			sourceTree = "<group>";
+		};
+		282603A827E07F4E00F165CC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2826039A27E07EC500F165CC /* Main.storyboard */,
+				2826039F27E07EC600F165CC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		282603A927E07F5700F165CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2826039D27E07EC600F165CC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		282603AA27E07F6000F165CC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2826039427E07EC500F165CC /* AppDelegate.swift */,
+				2826039627E07EC500F165CC /* SceneDelegate.swift */,
+				282603A227E07EC600F165CC /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		282603AB27E07F6500F165CC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2826039827E07EC500F165CC /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6P96P67U8G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuizApp/Info.plist;
+				INFOPLIST_FILE = PersonalQuizApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +351,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6P96P67U8G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuizApp/Info.plist;
+				INFOPLIST_FILE = PersonalQuizApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
