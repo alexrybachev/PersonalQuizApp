@@ -15,6 +15,7 @@
 		282603A127E07EC600F165CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2826039F27E07EC600F165CC /* LaunchScreen.storyboard */; };
 		282603AD27E086CC00F165CC /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282603AC27E086CC00F165CC /* QuestionsViewController.swift */; };
 		282603AF27E086DD00F165CC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282603AE27E086DD00F165CC /* ResultViewController.swift */; };
+		282603B227E0878600F165CC /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282603B127E0878600F165CC /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		282603A227E07EC600F165CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		282603AC27E086CC00F165CC /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		282603AE27E086DD00F165CC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		282603B127E0878600F165CC /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				282603AA27E07F6000F165CC /* App */,
 				282603AB27E07F6500F165CC /* ViewControllers */,
+				282603B027E0876A00F165CC /* Model */,
 				282603A827E07F4E00F165CC /* Storyboards */,
 				282603A927E07F5700F165CC /* Resources */,
 			);
@@ -103,6 +106,14 @@
 				282603AE27E086DD00F165CC /* ResultViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		282603B027E0876A00F165CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				282603B127E0878600F165CC /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				282603AF27E086DD00F165CC /* ResultViewController.swift in Sources */,
 				2826039927E07EC500F165CC /* IntroductionViewController.swift in Sources */,
 				2826039527E07EC500F165CC /* AppDelegate.swift in Sources */,
+				282603B227E0878600F165CC /* Question.swift in Sources */,
 				282603AD27E086CC00F165CC /* QuestionsViewController.swift in Sources */,
 				2826039727E07EC500F165CC /* SceneDelegate.swift in Sources */,
 			);
